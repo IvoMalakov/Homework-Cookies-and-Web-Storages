@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Problem 2 - Poll</title>
+    <script type="text/javascript" src="../jquery/jquery.js"></script>
+    <link type="text/css" rel="stylesheet" href="styles/style.css" />
+</head>
+<body>
+<form>
+    <h3>The most beautiful women in the world are: </h3>
+
+    <label for="Bulgarian-women">
+        <input type="radio" name="women" value="Bulgarian women" id="Bulgarian-women" />Bulgarian women
+    </label>
+
+    <label for="Russian-women">
+        <input type="radio" name="women" value="Russian women" id="Russian-women" />Russian women
+    </label>
+
+    <label for="Ukrainian-women">
+        <input type="radio" name="women" value="Ukrainian women" id="Ukrainian-women" />Ukrainian women
+    </label>
+
+    <label for="American-women">
+        <input type="radio" name="women" value="American women" id="American-women" />American women
+    </label>
+
+    <h3>The biggest enemy of Bulgaria is: </h3>
+
+    <label for="USA">
+        <input type="radio" name="enemy" value="USA" id="USA" />USA
+    </label>
+
+    <label for="Russia">
+        <input type="radio" name="enemy" value="Russia" id="Russia" />Russia
+    </label>
+
+    <label for="Turkey">
+        <input type="radio" name="enemy" value="Turkey" id="Turkey" />Turkey
+    </label>
+
+    <label for="China">
+        <input type="radio" name="enemy" value="China" id="China" />China
+    </label>
+
+    <button type="submit">Submit</button>
+</form>
+
+<div id="answers">
+    <h2>Answers submitted successfully</h2>
+
+    <h4>The most beautiful women in the world are: </h4>
+    <div id="women-answer-submitted">
+        <span class="msg correct-msg"> (Correct)</span>
+        <span class="msg incorrect-msg"> (Incorrect)</span>
+    </div>
+    <div id="women-answer-correct"></div>
+
+    <h4>The biggest enemy of Bulgaria is: </h4>
+    <div id="enemy-answer-submitted">
+        <span class="msg correct-msg"> (Correct)</span>
+        <span class="msg incorrect-msg"> (Incorrect)</span>
+    </div>
+    <div id="enemy-answer-correct"></div>
+
+    <div id="time-elapsed">Elapsed time: </div>
+</div>
+
+<div id="timer"></div>
+
+<script type="text/javascript" src="scripts/poll.js" defer></script>
+</body>
+</html>
